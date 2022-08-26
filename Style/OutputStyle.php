@@ -46,7 +46,7 @@ abstract class OutputStyle implements OutputInterface, StyleInterface
     /**
      * {@inheritdoc}
      */
-    public function write(string|iterable $messages, bool $newline = false, int $options = self::OUTPUT_NORMAL)
+    public function write(string|iterable $messages, bool $newline = false, int $options = 0)
     {
         $this->output->write($messages, $newline, $options);
     }
